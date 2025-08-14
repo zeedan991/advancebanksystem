@@ -81,6 +81,9 @@ public class assignment4 {
                         String name = sc.nextLine();
                         System.out.print("Enter pin: ");
                         int pin = sc.nextInt();
+                        if(pin <= 0){
+                          throw new SecurityException("ERROR : PIN CANT BE NEGATIVE");
+                        }
                         System.out.print("Enter initial balance: ");
                         double balance = sc.nextDouble();
 
@@ -124,12 +127,13 @@ public class assignment4 {
                         throw new IllegalArgumentException("INVALID AMMOUNT ");
                     }
                 } catch (ArithmeticException | IllegalArgumentException | SecurityException a) {
-                    System.out.println("ERROR " + a.getMessage());
+                    System.out.println("ERROR : " + a.getMessage());
                     sc.nextLine();
                 }
             }  catch (InputMismatchException e) {
-                System.out.println("ERROR: Please enter a valid number." );
+                System.out.println("ERROR : Please enter a valid number." );
                 sc.nextLine();}
         }
     }
 }
+
