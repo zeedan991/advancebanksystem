@@ -87,5 +87,5 @@ AMOUNT CREDITED, NEW BALANCE: 6500.0
 
 ## ✨ Author
 - **zeedan khatik**  
-  📧 zeedankhatik@gmmail.com  
+  📧 zeedankhatik@gmail.com  
   🌐 [GitHub Profile](https://github.com/zeedan991)
