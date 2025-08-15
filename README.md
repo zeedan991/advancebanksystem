@@ -47,15 +47,14 @@ Classes:
 ## 💻 Usage Example
 === BANK ACCOUNT SYSTEM ===
 
-Create new account and perform transactions
-
-Exit
-Enter your choice: 1
-Enter account holder name: John Doe
-Enter pin: 1234
-Enter initial balance: 5000
-ACCOUNT NUMBER FOR John Doe is : 2001
-BALANCE IN ACCOUNT NUMBER 2001 is 5000.00
+Create new account and perform transactions.
+Exit.
+Enter your choice: 1.
+Enter account holder name : John Doe.
+Enter pin: 1234.
+Enter initial balance: 5000.
+ACCOUNT NUMBER FOR John Doe is : 2001.
+BALANCE IN ACCOUNT NUMBER 2001 is 5000.00.
 
 --- Account Menu ---
 
