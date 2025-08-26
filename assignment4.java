@@ -53,6 +53,16 @@ class mainprocess extends createAccout {
     public void showPin() {
         System.out.println("PIN for this account is: " + pin);
     }
+
+    public void check_pin(int pin1){
+        if (pin1 == pin){
+            System.out.println("PIN IS CORRECT ");
+        }
+        else{
+            throw new SecurityException("server breach ");
+        }
+    }
+
 }
 
 public class assignment4 {
@@ -97,11 +107,12 @@ public class assignment4 {
                             System.out.println("2. Withdraw");
                             System.out.println("3. View Balance");
                             System.out.println("4. Display PIN");
-                            System.out.println("5. Exit to Main Menu");
+                            System.out.println("5. Check pin");
+                            System.out.println("6. Exit to Main Menu");
                             System.out.print(" Choose option: ");
                             int accChoice = sc.nextInt();
 
-                            if (accChoice == 5) {
+                            if (accChoice == 6) {
                                 break;
                             }
                             {
@@ -118,6 +129,10 @@ public class assignment4 {
                                     }
                                     case 3 -> account.getbaalance();
                                     case 4 -> account.showPin();
+                                    case 5 -> {
+                                        System.out.println("Enter your pin");
+                                        int pin_user = sc.nextInt();
+                                        account.check_pin(pin_user);}
                                     default -> throw new IllegalArgumentException("INVALID AMMOUNT ");
                                 }
                             }
